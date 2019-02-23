@@ -1,0 +1,179 @@
+article {
+    width: 10em;
+    margin: 1em;
+    grid-column: auto;
+    grid-row: auto;
+}
+
+article:hover {
+    transform: scale(1.1);
+}
+
+article header img {
+    width: 15em;
+    height: 15em;
+}
+
+section:last-of-type {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+}
+
+.rood {
+    display: block;
+    transition: all 1s;
+    opacity: 1;
+}
+
+.groen {
+    display: block;
+    transition: all 1s;
+    opacity: 1;
+}
+
+.geel {
+    display: block;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.verwijderen {
+    display: none;
+    transition: all 1s;
+}
+
+.verwijderenEerst {
+    opacity: 0;
+    transition: all 1s;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+
+}
+
+body section {
+    margin: 0 auto;
+    width: 93%;
+    margin-top: 2em;
+}
+
+body > form {
+    width: 70%;
+    margin: 3em auto;
+    text-align: center;
+}
+
+body form:first-of-type label {
+    cursor: pointer;
+}
+
+input {
+    position: absolute;
+    visibility: hidden;
+    right: -9999;
+}
+
+input[type=radio] + label {
+    color: #2b4040;
+    padding: 1em;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    height: 1.3em;
+    background-color: gainsboro;
+    border-radius: 0.625em;
+    margin: 1em;
+    transition: all .5s;
+}
+
+
+
+
+
+input[type=radio]:nth-of-type(1):checked + label:nth-of-type(1) {
+    background-color: red;
+    border-radius: 0.625em;
+    color: #2b4040;
+    padding: 1em;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    height: 1.3em;
+    transition: all .5s;
+}
+
+input[type=radio]:nth-of-type(2):checked + label:nth-of-type(2) {
+    background-color: green;
+    border-radius: 0.625em;
+    color: #2b4040;
+    padding: 1em;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    height: 1.3em;
+    transition: all .5s;
+}
+
+input[type=radio]:nth-of-type(3):checked + label:nth-of-type(3) {
+    background-color: yellow;
+    border-radius: 0.625em;
+    color: #2b4040;
+    padding: 1em;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    height: 1.3em;
+    transition: all .5s;
+}
+
+input[type=radio]:nth-of-type(4):checked + label:nth-of-type(4) {
+    background-color: darkslategray;
+    border-radius: 0.625em;
+    color: whitesmoke;
+    padding: 1em;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    height: 1.3em;
+    transition: all .5s;
+}
+
+
+
+
+
+
+input[type=radio]:nth-of-type(1):hover + label:nth-of-type(1) {
+    background-color: rgba(255, 0, 0, 0.4);
+    border-radius: 0.625em;
+    color: #2b4040;
+    padding: 1em;
+    height: 1.3em;
+    transition: all .5s;
+}
+
+input[type=radio]:nth-of-type(2):hover + label:nth-of-type(2) {
+    background: rgba(0, 255, 0, 0.4);
+    border-radius: 0.625em;
+    color: #2b4040;
+    padding: 1em;
+    height: 1.3em;
+    transition: all .5s;
+}
+
+input[type=radio]:nth-of-type(3):hover + label:nth-of-type(3) {
+    background: rgba(239, 192, 0, 0.4);
+    border-radius: 0.625em;
+    color: #2b4040;
+    padding: 1em;
+    height: 1.3em;
+    transition: all .5s;
+}
+
+input[type=radio]:nth-of-type(4):hover + label:nth-of-type(4) {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0.625em;
+    color: #2b4040;
+    padding: 1em;
+    height: 1.3em;
+    transition: all .5s;
+}
