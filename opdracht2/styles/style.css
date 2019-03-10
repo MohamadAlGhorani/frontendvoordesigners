@@ -1,0 +1,46 @@
+body {
+    margin-right: 3em;
+    margin-left: 3em;
+    font-family: sans-serif;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    width: 100%;
+    position: relative;
+    transition: all 1s;
+    opacity: 0;
+}
+section.inbeeld {
+    opacity: 1;
+    transition: all 1s;
+}
+section:hover button {
+    background-color: black;
+    color: white;
+}
+section button:focus {
+    background-color: black;
+    color: white;
+}
+section button {
+    -webkit-appearance: none;
+    width: 50%;
+    font-family: sans-serif;
+    color: orange;
+    text-align: center;
+    font-size: 3em;
+    padding-right: 1em;
+    padding-left: 1em;
+    background-color: whitesmoke;
+    margin: 0;
+    border: 0;
+}
+section img {
+    width: 50%;
+    height: 22em;
+}
+footer p {
+    text-align: center;
+}
