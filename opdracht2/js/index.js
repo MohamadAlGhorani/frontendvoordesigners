@@ -1,7 +1,5 @@
 var element = document.querySelectorAll('section');
 
-document.addEventListener('scroll', inView);
-
 function inView() {
     var windowHeight = window.innerHeight;
     var scrollY = window.scrollY || window.pageYOffset;
@@ -15,3 +13,4 @@ function inView() {
 }
 
 inView();
+document.addEventListener('scroll', inView);
