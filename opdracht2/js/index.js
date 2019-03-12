@@ -1,6 +1,8 @@
 var element = document.querySelectorAll('section');
 
-document.addEventListener('scroll', function () {
+document.addEventListener('scroll', inView);
+
+function inView() {
     var windowHeight = window.innerHeight;
     var scrollY = window.scrollY || window.pageYOffset;
     var scrollPosition = scrollY + windowHeight;
@@ -10,4 +12,6 @@ document.addEventListener('scroll', function () {
             element[i].classList.add('inbeeld');
         }
     }
-}, true);
+}
+
+inView();
