@@ -1,0 +1,153 @@
+main > section:first-of-type {
+    position: fixed;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 9em;
+    height: 30em;
+    left: 1.5em;
+    top: 9em;
+    overflow-y: scroll;
+}
+
+main > section:first-of-type article {
+    background-color: black;
+    width: 6em;
+    border-radius: 10px;
+    transition: all 1s;
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: 1em;
+    padding-top: 0;
+}
+
+main > section:first-of-type article h2 {
+    font-size: 12px;
+    color: white;
+    background-color: black;
+}
+
+main > section:last-of-type article {
+    position: relative;
+    background-color: black;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all .5s;
+}
+
+main > section:last-child article.inbeeld {
+    opacity: 1;
+    transition: all .5s;
+}
+
+main section:last-of-type article:focus {
+    -webkit-appearance: none;
+    border-bottom: 10px solid red;
+    transition: all .5s;
+}
+
+main section:last-of-type > article:first-of-type {
+    opacity: 1;
+    transition: all 1s;
+}
+
+h2 {
+    color: white;
+    font-family: sans-serif;
+    padding-top: .5em;
+    width: 100%;
+    margin: 0;
+
+}
+
+p {
+    font-family: sans-serif;
+    color: white;
+}
+
+h1 {
+    width: 70%;
+    margin: 0 auto;
+    font-family: sans-serif;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+p {
+    width: 40em;
+    line-height: 1.4em;
+}
+
+span {
+    margin-left: 1em;
+}
+
+button {
+    -webkit-appearance: none;
+    width: 6em;
+    height: 3em;
+    border: 1px solid red;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+button.done {
+    background-color: darkgray;
+}
+
+header button:first-of-type {
+    position: fixed;
+    right: 10em;
+    bottom: 2em
+}
+
+h3 {
+    color: red;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 2.88em;
+    margin: 0;
+    overflow: hidden;
+}
+
+header > p {
+    position: fixed;
+    right: 5.7em;
+    bottom: 5em;
+    width: 9em;
+    color: black;
+    font-size: 12px;
+}
+
+img {
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+    object-position: center;
+}
+
+article button {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    width: 10em;
+}
+
+main section:last-of-type h2:last-child {
+    display: none;
+}
+
+body > h2 {
+    position: fixed;
+    left: 1em;
+    top: 4em;
+    color: black;
+}
