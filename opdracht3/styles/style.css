@@ -18,6 +18,25 @@ main > section:first-of-type article {
     margin-top: 1em;
     padding: 1em;
     padding-top: 0;
+    position: relative;
+}
+
+main > section:first-of-type article.dicht {
+    display: none;
+}
+
+main > section:first-of-type article button {
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    background-image: url(../images/close.png);
+    width: 1em;
+    height: 1em;
+    background-color: transparent;
+    border: 0;
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 main > section:first-of-type article h2 {

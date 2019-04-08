@@ -16,6 +16,7 @@ var lijst = document.querySelector('main section:first-of-type');
 
 function showData(jsonObj) {
     var activiteiten = jsonObj;
+    console.log(activiteiten);
     for (var i = 0; i < activiteiten.length; i++) {
         var x = document.createElement('h3');
         x.textContent = ('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
@@ -48,13 +49,18 @@ function showData(jsonObj) {
         knop.addEventListener("click", function () {
             var deze = this.parentElement.lastElementChild.innerHTML;
             var titel = document.createElement('h2');
+            var knopje = document.createElement('button');
             titel.textContent = deze;
             var ar = document.createElement('article');
+            ar.appendChild(knopje);
             ar.appendChild(titel);
             lijst.appendChild(ar);
             console.log('winnaar');
             this.classList.add('done');
-
+            knopje.addEventListener('click', function () {
+                var item = this.parentNode;
+                item.classList.add('dicht');
+            });
         });
     }
 }
