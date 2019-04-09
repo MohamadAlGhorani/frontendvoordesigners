@@ -18,6 +18,9 @@ Deze website bevat semantische html die voor de gehandicapten heel handig zijn.
 Er word querySelectors gebruikt om het makkelijk navolgbaar te maken.
 Er wordt geen ID en class gebruikt om het navolgbaar te maken.
 
+# URL
+https://mohamadalghorani.github.io/frontendvoordesigners/opdracht3/
+
 # Gemaakt door
 Moahamd Al Ghorani
 moh.gh266@gmail.com
